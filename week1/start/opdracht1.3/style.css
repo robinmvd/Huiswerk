@@ -1,0 +1,14 @@
+td {
+    padding: 0 20px;
+}
+
+tfoot td {
+    text-align: center;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: grey;
+    color: white
+}
+
