@@ -27,11 +27,6 @@
                 <th></th>
             </tr>
         </thead>
-        <tfoot>
-            <tr>
-                <td colspan="6">&copy; My Collection</td>
-            </tr>
-        </tfoot>
         <tbody>
         <?php foreach ($musicAlbums as $index => $album) { ?>
             <tr>
@@ -42,7 +37,7 @@
                 <td><?=$album['year'] ?></td>
                 <td><?=$album['tracks'] ?></td>
                 <td><a href="details.php?index=<?= $index ?>">Details</a></td>
-                <td><a href="edit.php?index=<?= $index ?>"></a>Edit</td>
+                <td><a href="edit.php?index=<?= $index ?>">Edit</a></td>
             </tr>
         <?php } ?>
         </tbody>

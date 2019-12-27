@@ -1,3 +1,7 @@
+body{
+    text-align: center;
+    font-family: Montserrat;
+}
 label {
     display: inline-block;
     width: 80px;
@@ -14,7 +18,7 @@ footer {
 }
 /*Table*/
 td {
-    padding: 0 10px;
+    padding: 10px;
 }
 td.image img {
     width: 50px;
@@ -27,9 +31,13 @@ tfoot td {
 }
 
 
-td:nth-child(even) {
+tr:nth-child(even) {
     background-color: grey;
     color: white
+}
+
+table {
+    margin: 0 auto;
 }
 
 
