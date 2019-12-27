@@ -4,15 +4,21 @@ include_once 'includes/music-data.php';
 
 
 // IF index is not present in url or value is empty
-
-
-    // redirect to index.php
-
-// IF index is present
+if(!isset($_GET['index']) || $_GET['index'] == '' )
+{
+        // redirect to index.php
+        header('Location: index.php');
+}
+else
+{
     // Get index of album from url (GET)
-
+    $index = $_GET['index'];
 
     // get album from albums collection
+    $album = $musicAlbums[$index];
+
+
+}
 
 ?>
 <!doctype html>
