@@ -33,31 +33,31 @@ else
 	</head>
 	<body >
         <section>
-            <h1>Edit album - specifiek album</h1>
+            <h1>Edit album - <?= $album['album']?> by <?= $album['artist']?></h1>
 
             <form action="" method="post">
                 <div class="data-field">
                     <label for="artist">Artist</label>
-                    <input id="artist" type="text" name="artist" value=""/>
+                    <input id="artist" type="text" name="artist" value="<?= $album['artist']?>"/>
                 </div>
                 <div class="data-field">
                     <label for="album">Album</label>
-                    <input id="album" type="text" name="album" value=""/>
+                    <input id="album" type="text" name="album" value="<?= $album['album']?>"/>
                 </div>
                 <div class="data-field">
                     <label for="genre">Genre</label>
-                    <input id="genre" type="text" name="genre" value=""/>
+                    <input id="genre" type="text" name="genre" value="<?= $album['genre']?>"/>
                 </div>
                 <div class="data-field">
                     <label for="year">Year</label>
-                    <input id="year" type="text" name="year" value=""/>
+                    <input id="year" type="text" name="year" value="<?= $album['year']?>"/>
                 </div>
                 <div class="data-field">
                     <label for="tracks">Tracks</label>
-                    <input id="tracks" type="number" name="tracks" value=""/>
+                    <input id="tracks" type="number" name="tracks" value="<?= $album['tracks']?>"/>
                 </div>
                 <div class="data-submit">
-                    <input type="hidden" name="album-number" value=""/>
+                    <input type="hidden" name="album-number" value="<?= $index; ?>"/>
                     <input type="submit" name="submit" value="Save"/>
                 </div>
             </form>
