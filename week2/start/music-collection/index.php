@@ -13,6 +13,7 @@
 </head>
 <body>
 <h1>Music Collection</h1>
+<a href="create.php">Create new album</a>
     <table>
         <thead>
             <tr>
@@ -34,7 +35,7 @@
         <tbody>
         <?php foreach ($musicAlbums as $index => $album) { ?>
             <tr>
-                <td><?= $index +1 ?></td>
+                <td><?= $index + 1 ?></td>
                 <td><?=$album['artist'] ?></td>
                 <td><?=$album['album'] ?></td>
                 <td><?=$album['genre'] ?></td>

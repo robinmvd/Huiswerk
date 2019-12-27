@@ -1,10 +1,39 @@
 <?php
 // Check if form is submitted.
-
+if (isset($_POST['submit']))
+{
 
     // 'Post back' with the data from the form.
+    $artist = $_POST['artist'];
+    $album = $_POST['album'];
+    $genre = $_POST['genre'];
+    $year = $_POST['year'];
+    $tracks = $_POST['tracks'];
 
-    // Now this data can be stored in de database
+    //error meldingen (validatie php)
+
+    $errors = [];
+    if ($artist == '') {
+        $errors[] = 'vul een artiest in.';
+    }
+    if ($album == '') {
+    $errors[] = 'vul een naam van een album in.';
+    }
+    if ($genre == '') {
+        $errors[] = 'vul een genre in.';
+    }
+    if ($year == '') {
+        $errors[] = 'vul een jaar in.';
+    }
+    if ($tracks == '') {
+        $errors[] = 'vul het aantal tracks in.';
+    }
+
+    if(empty($errors))
+    {
+        //data kan worden opgeslagen in de database
+    }
+}
 
 ?>
 <!doctype html>

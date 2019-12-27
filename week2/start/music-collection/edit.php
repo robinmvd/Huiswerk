@@ -1,8 +1,10 @@
 <?php
 // Include data (all albums)
+include_once 'includes/music-data.php';
 
 
 // IF index is not present in url or value is empty
+
 
     // redirect to index.php
 
